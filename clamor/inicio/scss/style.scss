@@ -1,0 +1,621 @@
+@import 'maps';
+@import 'extends';
+@import 'mixins';
+
+
+.logoclamor {
+@include sizes(100%, 100%);
+}
+
+img {
+    width: 100px;
+}
+
+img.logoclamor {
+    @include sizes(100px, 70px);
+    align-self: center;   
+    padding: 0 10px 0 10px;
+}
+
+.logoclamor {
+    font-family: map-get($fuentes, "teko");
+    font-size: 60px;
+}
+
+.home {
+    font-family: map-get($fuentes, "arial");
+    @extend %back-color;
+}
+
+.nosotros {
+    font-family: map-get($fuentes, "arial");
+    @extend %back-color;
+}
+
+@font-face {
+    font-family: map-get($fuentes, "arial");
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: map-get($fuentes, "teko");
+    src: url('teko-light-webfont.woff2') format('woff2'),
+         url('teko-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ 
+h2 {
+    font-family: map-get($fuentes, "roboto");
+    color: blanchedalmond;
+    background-color: rgb(206, 137, 124);
+    padding: 40px 40px;
+    width: inherit;
+}
+
+.cartelbienvenidos {
+    font-family: map-get($fuentes, "roboto");
+    font-weight: bold;
+   @extend %flex;
+    justify-content: center;
+}
+
+.header {
+    width: 30%;
+   @extend %flex;
+    justify-content: space-around;
+}
+
+.container {
+    height: 120px;
+}
+
+div.container {
+    height: 100px;
+}
+
+div.logoclamor {
+    @include sizes(80px, 70%);
+    margin-top: 10px;
+}
+
+.segundabarranavbar {
+   @extend %flex;
+    justify-content: center;
+    flex-wrap: center;
+    margin-top: 5px;
+}
+
+
+/*transform es para que se inclinen los bordes, alargarlos, etc...*/
+/*border-radius es para hacer redondos los bordes*/
+
+.header li {
+    width: 85px;
+    background-color: #ffffff;
+   @extend %flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    transform: skew(-20deg);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .header li a{
+    text-decoration: none;
+    color: black;
+    }
+
+.inicio {
+    text-decoration: none;
+}
+
+
+.historias-container {
+   @extend %flex;
+    justify-content: center;
+}
+
+.historias-lista {
+   @extend %flex;
+    justify-content: flex-start;
+    text-align: center
+}
+
+
+.historia1 {
+    transition: transform .2s; 
+    width: 50%;
+}
+ 
+.historia1:hover {
+    transform: scale(1.5); 
+}
+
+
+.historia2 {
+    transition: transform .2s; 
+    width: 50%;
+}
+ 
+.historia2:hover {
+    transform: scale(1.5); 
+}
+
+.historia3 {
+    transition: transform .2s; 
+    width: 50%;
+}
+ 
+.historia3:hover {
+    transform: scale(1.5); 
+}
+
+.historia4 {
+    transition: transform .2s; 
+    width: 50%;
+}
+ 
+.historia4:hover {
+    transform: scale(1.5); 
+}
+
+.twitterlogo {
+    width: 40px;
+}
+
+.instalogo {
+    width: 30px;
+}
+
+.facelogo {
+    width: 40px;
+}
+
+.logoclamor2 {
+    width: 60px;
+   @extend %flex;
+    align-self: center;   
+}
+
+.pie-container {
+   @extend %flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+.pie {
+    list-style: none;
+    background-color: rgb(206, 137, 124);
+    width: 100%;
+   @extend %flex;
+    justify-content: space-around;
+}
+
+.pie2 {
+    list-style: none;
+   @extend %flex;
+    align-items: left;
+}
+
+footer {
+    width: 100%;
+  }
+
+.noticias {
+    @extend %back-color;
+}
+
+  .textoclamor {
+    margin: 40px;
+    padding-left: 20px;
+    background-color: rgb(172, 78, 78);
+    color: white;
+    width: 70%;
+}
+
+.textoautora {
+    margin: 15px;
+    padding: 15px;
+    font-family: map-get($fuentes, "roboto");
+    font-style: italic;
+    background-color: rgb(172, 78, 78);
+    color: white;
+    width: 50%;
+}
+
+
+.boton1 {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .boton1:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+  
+.boton2 {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+.boton2:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+
+.boton3 {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+.boton3:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+
+  
+.boton4 {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+.boton4:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+
+.perfilsinea {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfilsinea:hover {
+    transform: scale(1.5); 
+}
+
+.perfilkrotalia {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfilkrotalia:hover {
+    transform: scale(1.5); 
+}
+
+.perfiloliver {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfiloliver:hover {
+    transform: scale(1.5); 
+}
+
+.perfilkhada {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfilkhada:hover {
+    transform: scale(1.5); 
+}
+.perfilomen {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfilomen:hover {
+    transform: scale(1.5); 
+}
+
+.perfildoba {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfildoba:hover {
+    transform: scale(1.5); 
+}
+
+.perfilmirio {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfilmirio:hover {
+    transform: scale(1.5); 
+}
+
+.perfilpiero {
+    transition: transform .2s; 
+    width: 10;
+}
+ 
+.perfilpiero:hover {
+    transform: scale(1.5); 
+}
+
+
+.grilla-queesclamor-imagen { 
+    margin: 50px;
+    grid-area: imagen;
+    padding: 0 20px 0 0;}
+.grilla-queesclamor-titulo { grid-area: titulo; }
+.grilla-queesclamor-texto { 
+    grid-area: texto;     
+    margin: 0px;
+    padding: 0px;
+    color: #000000; }
+
+.grilla-queesclamor {
+   padding: 20px 0 0 20px;
+   display: grid;
+   grid-template-areas:
+     "imagen titulo"
+     "imagen texto";
+       gap: 10px;
+       padding: 0 50px 0 50px;
+}
+
+.grilla-autor-imagen { 
+    grid-area: autor-imagen;
+    padding: 0 20px 0 0;}
+.grilla-autor-titulo { grid-area: autor-titulo; }
+.grilla-autor-texto { 
+    grid-area: autor-texto;     
+    margin: 0px;
+    padding: 0px;
+    color: #000000; }
+.grilla-autor-principales { 
+    grid-area: autor-principales;     
+    margin: 0px;
+    padding: 0px;
+    color: #000000; }
+.grilla-autor-personaje1 { grid-area: autor-personaje1; }
+.grilla-autor-personaje2 { grid-area: autor-personaje2; }
+.grilla-autor-personaje3 { grid-area: autor-personaje3; }
+.grilla-autor-personaje4 { grid-area: autor-personaje4; }
+.grilla-autor {
+   padding: 20px 0 0 20px;
+   display: grid;
+   grid-template-areas:
+     "autor-titulo autor-titulo autor-titulo autor-titulo autor-titulo"
+     "autor-imagen autor-texto autor-texto autor-texto autor-texto"
+     "autor-imagen autor-principales autor-principales autor-principales autor-principales"
+     "autor-imagen autor-personaje1 autor-personaje2 autor-personaje3 autor-personaje4"
+     ;
+       gap: 10px;
+       padding: 0 50px 0 50px;
+}
+
+.grilla-queesclamor-titulo {
+    font-family: "teko-font-light";
+    font-size: 50px;
+    padding-bottom: 0px;
+}
+
+
+.bannernosotros {
+    width: 70%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "sectionA sectionA sectionA sectionA"
+    "sectionB sectionB sectionB sectionB"
+    "footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header
+}
+
+.sectionA {
+    @extend %back-color;
+    grid-area: sectionA;
+   @extend %flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.sectionB {
+    @extend %back-color;
+    grid-area: sectionB;
+   @extend %flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.noticia1 {
+    font-family: map-get($fuentes, "roboto");
+    font-size: larger;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+
+.noticia2 {
+    font-family: map-get($fuentes, "roboto");
+    font-size: larger;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+
+.noticia3 {
+    font-family: map-get($fuentes, "arial");
+    font-size: larger;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+
+.noticia4 {
+    font-family: map-get($fuentes, "arial");
+    font-size: larger;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+
+.noticia5 {
+    font-family: map-get($fuentes, "arial");
+    font-size: larger;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+
+.noticia6 {
+    font-family: map-get($fuentes, "roboto");
+    font-size: larger;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+
+.tienda {
+    @extend %back-color;
+}
+
+h3 {
+    font-family: map-get($fuentes, "roboto");
+    background-color: #FFF;
+}
+
+.contenedorA {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav sectionC sectionC sectionC"
+    "nav sectionD sectionD sectionD"
+    "nav sectionE sectionE sectionE"
+    "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.sectionC {
+    grid-area: sectionC;
+    float: center;
+}
+
+.sectionD {
+    grid-area: sectionD;
+    float: center;
+}
+
+.sectionE {
+    grid-area: sectionE;
+    float: center;
+}
+
+.footer {
+    grid-area: footer;
+   @extend %flex;
+    justify-content: center;
+}
+
+section.BIENVENIDOSTIENDA {
+    width: 50%;
+    padding: 0px;
+    margin: 15px;
+}
+
+p.parrafotienda {
+    width: 25%;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: grey;
+    color: white;
+  }
+
+  .headertienda {
+      background-color: black;
+ }
+
+ .buttonlogin {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .buttonlogin span {
+    transition: all 0.3s;
+  }
+  .buttonlogin::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include sizes(100%, 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    transform: scale(0.1, 1);
+  }
+  .buttonlogin:hover span {
+    letter-spacing: 2px;
+  }
+  .buttonlogin:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .buttonlogin::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+@include sizes(100%, 100%);
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .buttonlogin:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+
+  h4 {
+      background-color: #FFF;
+      font-family: map-get($fuentes, "roboto");
+     @extend %flex;
+      justify-content: center;
+  }
+
+  .imagentienda {
+      width: 100%;
+  }
+
+  div.containertienda2 {
+      width: 80%;
+  }
+
+  .containerpadretienda {
+     @extend %flex;
+      justify-content: center;
+  }

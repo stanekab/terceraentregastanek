@@ -23,19 +23,19 @@ img.logoclamor {
 }
 
 .home {
-    font-family: map-get($fuentes, "arial");
+    font-family: map-get($fuentes, "roboto");
     @extend %back-color;
 }
 
 .nosotros {
-    font-family: map-get($fuentes, "arial");
+    font-family: map-get($fuentes, "roboto");
     @extend %back-color;
 }
 
 @font-face {
-    font-family: map-get($fuentes, "arial");
-    src: url('roboto-light-webfont.woff2') format('woff2'),
-         url('roboto-light-webfont.woff') format('woff');
+    font-family: map-get($fuentes, "roboto");
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -43,8 +43,8 @@ img.logoclamor {
 
 @font-face {
     font-family: map-get($fuentes, "teko");
-    src: url('teko-light-webfont.woff2') format('woff2'),
-         url('teko-light-webfont.woff') format('woff');
+    src: url('../fonts/teko-light-webfont.woff2') format('woff2'),
+         url('../fonts/teko-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -59,7 +59,7 @@ h2 {
 }
 
 .cartelbienvenidos {
-    font-family: map-get($fuentes, "roboto");
+    font-family: map-get($fuentes, "teko");
     font-weight: bold;
    @extend %flex;
     justify-content: center;

@@ -608,3 +608,65 @@ div.containertienda2 {
   margin-left: 200px;
   margin-right: 200px;
 }
+
+.mandanosmensaje {
+  display: flex;
+  justify-content: center;
+}
+
+.container-contact100 {
+  display: flex;
+  justify-content: center;
+}
+
+input.input1001 {
+  height: 40px;
+}
+
+input.input1002 {
+  height: 40px;
+}
+
+input.input1003 {
+  height: 40px;
+}
+
+textarea.input1004 {
+  height: 150px;
+}
+ 
+.wrap-contact100 {
+  width: 30%;
+  border: #ffffff;
+}
+
+div.container-contact100 {
+  background-color: #ffffff;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.input1001 {
+  width: 100%;
+}
+
+.input1002 {
+  width: 100%;
+}
+
+.input1003 {
+  width: 100%;
+}
+
+.input1004 {
+  width: 100%;
+}
+
+.formulariotextoultimo {
+  display: flex;
+  justify-content: center;
+  font-family: "roboto-font-light";
+  font-size: 20px;
+  font-weight: bold;
+
+}

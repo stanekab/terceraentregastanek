@@ -45,8 +45,11 @@ h2 {
 }
 
 .cartelbienvenidos {
-  font-weight: bold;
+  font-family: "roboto-font-light";
+  background-color: rgb(206, 137, 124);
   justify-content: center;
+  padding: 35px;
+  color: bisque;
 }
 
 .header {
@@ -72,6 +75,7 @@ div.logoclamor {
   justify-content: center;
   flex-wrap: center;
   margin-top: 5px;
+  width: 100%;
 }
 
 /*transform es para que se inclinen los bordes, alargarlos, etc...*/
@@ -183,7 +187,7 @@ footer {
 .textoclamor {
   margin: 40px;
   padding-left: 20px;
-  background-color: rgb(172, 78, 78);
+  background-color: rgb(206, 137, 124);
   color: white;
   width: 70%;
 }
@@ -193,7 +197,7 @@ footer {
   padding: 15px;
   font-family: "roboto-font-light";
   font-style: italic;
-  background-color: rgb(172, 78, 78);
+  background-color: rgb(206, 137, 124);
   color: white;
   width: 50%;
 }
@@ -307,7 +311,7 @@ footer {
 }
 
 .grilla-queesclamor-imagen {
-  margin: 50px;
+  margin-left: 100px;
   grid-area: imagen;
   padding: 0 20px 0 0;
 }
@@ -324,10 +328,10 @@ footer {
 }
 
 .grilla-queesclamor {
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 20px;
   display: grid;
   grid-template-areas: "imagen titulo" "imagen texto";
-  gap: 10px;
+  gap: 100px;
   padding: 0 50px 0 50px;
 }
 
@@ -400,8 +404,6 @@ header {
 .sectionA {
   grid-area: sectionA;
   justify-content: center;
-  padding: 50px;
-  margin-top: 50px;
 }
 
 .sectionB {
@@ -418,48 +420,56 @@ footer {
 .noticia1 {
   font-family: "roboto-font-light";
   font-size: larger;
-  background-color: #e74c3c;
+  background-color: pink;
   padding: 10px;
 }
 
 .noticia2 {
   font-family: "roboto-font-light";
   font-size: larger;
-  background-color: #e74c3c;
+  background-color: pink;
   padding: 10px;
 }
 
 .noticia3 {
   font-family: "Arial, Helvetica, sans-serif";
   font-size: larger;
-  background-color: #e74c3c;
+  background-color: pink;
   padding: 10px;
 }
 
 .noticia4 {
   font-family: "Arial, Helvetica, sans-serif";
   font-size: larger;
-  background-color: #e74c3c;
+  background-color: pink;
   padding: 10px;
 }
 
 .noticia5 {
   font-family: "Arial, Helvetica, sans-serif";
   font-size: larger;
-  background-color: #e74c3c;
+  background-color: pink;
   padding: 10px;
 }
 
 .noticia6 {
   font-family: "roboto-font-light";
   font-size: larger;
-  background-color: #e74c3c;
+  background-color: pink;
   padding: 10px;
 }
 
 h3 {
   font-family: "roboto-font-light";
-  background-color: #FFF;
+}
+.h3noticias {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "roboto-font-light";
+  background-color: rgb(206, 137, 124);
+  color: bisque;
+  padding: 35px;
 }
 
 .contenedorA {
@@ -612,6 +622,7 @@ div.containertienda2 {
 .mandanosmensaje {
   display: flex;
   justify-content: center;
+  font-family: "roboto-font-light";
 }
 
 .container-contact100 {
@@ -669,4 +680,31 @@ div.container-contact100 {
   font-size: 20px;
   font-weight: bold;
 
+}
+
+input.form-control {
+  width: 200px;
+
+}
+
+div.list-group {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.listagrupocontainer {
+  display: flex;
+  justify-content: center;
+}
+
+section.text-center.containertienda {
+  background-color: rgb(206, 137, 124);
+  font-family: "roboto-font-light";
+  color: bisque;
+
+}
+
+.botonfooter {
+  width: 40px;
 }
